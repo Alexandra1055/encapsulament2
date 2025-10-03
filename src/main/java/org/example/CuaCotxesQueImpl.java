@@ -15,7 +15,7 @@ public class CuaCotxesQueImpl implements CuaCotxes {
         if (cotxe == null) {
             throw new IllegalArgumentException("El cotxe no pot ser null");
         }
-        cua.add(cotxe);           // encola al final
+        cua.add(cotxe);
     }
 
     @Override
@@ -43,7 +43,7 @@ public class CuaCotxesQueImpl implements CuaCotxes {
         if (n < 0 || n >= cua.size()) {
             throw new NoSuchElementException("Índex fora de rang");
         }
-        Cotxe[] arr = cua.toArray(new Cotxe[0]); // copia O(n)
+        Cotxe[] arr = cua.toArray(new Cotxe[0]);
         return arr[n];
     }
 
