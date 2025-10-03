@@ -1,6 +1,6 @@
 package org.example;
 
-import org.example.model.Cotxe;
+import org.example.Model.Cotxe;
 import org.junit.jupiter.api.Test;
 
 import java.util.NoSuchElementException;
