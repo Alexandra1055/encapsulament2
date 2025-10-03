@@ -11,7 +11,7 @@ class CuaTest {
 
     @Test
     void testEncuar() {
-        CuaCotxes cua = new CuaCotxesArrayImpl(); // Aquí triem la implementació de la interface CuaCotxes
+        CuaCotxes cua = new CuaCotxesArrayListImpl(); // Aquí triem la implementació de la interface CuaCotxes
 
         Cotxe cotxe1 = new Cotxe("1111AAA", "Seat Ibiza");
         Cotxe cotxe2 = new Cotxe("2222BBB", "Ferrari TestaRosa");
@@ -35,7 +35,7 @@ class CuaTest {
 
     @Test
     void testDesencuar() {
-        CuaCotxes cua = new CuaCotxesArrayImpl();
+        CuaCotxes cua = new CuaCotxesArrayListImpl();
 
         Cotxe cotxe1 = new Cotxe("1111AAA", "Seat Ibiza");
         Cotxe cotxe2 = new Cotxe("2222BBB", "Ferrari TestaRosa");
@@ -64,7 +64,7 @@ class CuaTest {
 
     @Test
     void testCancelar(){
-        CuaCotxes cua = new CuaCotxesArrayImpl();
+        CuaCotxes cua = new CuaCotxesArrayListImpl();
 
         Cotxe cotxe1 = new Cotxe("1111AAA", "Seat Ibiza");
         Cotxe cotxe2 = new Cotxe("2222BBB", "Ferrari TestaRosa");
@@ -96,7 +96,7 @@ class CuaTest {
     @Test
     void testCount() {
 
-        CuaCotxes cua = new CuaCotxesArrayImpl();
+        CuaCotxes cua = new CuaCotxesArrayListImpl();
 
         Cotxe cotxe1 = new Cotxe("1111AAA", "Seat Ibiza");
         Cotxe cotxe2 = new Cotxe("2222BBB", "Ferrari TestaRosa");
