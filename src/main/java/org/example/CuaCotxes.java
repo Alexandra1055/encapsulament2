@@ -5,9 +5,9 @@ import org.example.Model.Cotxe;
 public interface CuaCotxes {
     void encuar(Cotxe cotxe);
 
-    void desencuar(Cotxe cotxe);
+    void desencuar();
 
-    void cancelar(Cotxe cotxe);
+    void cancelar();
 
     Cotxe get(int n);
 

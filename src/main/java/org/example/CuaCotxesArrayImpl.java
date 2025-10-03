@@ -9,13 +9,13 @@ public class CuaCotxesArrayImpl implements CuaCotxes {
     @Override
     public void encuar(Cotxe cotxe) {
         if(cotxe == null){
-            throw new NoSuchElementException("No s'ha passat ningun cotxe");
+            throw new IllegalArgumentException("No s'ha passat ningun cotxe");
         }
         cua.add(cotxe);
     }
 
     @Override
-    public void desencuar(Cotxe cotxe) {
+    public void desencuar() {
         if(cua.isEmpty()){
             throw new NoSuchElementException("La llista está buida");
         }
@@ -23,7 +23,7 @@ public class CuaCotxesArrayImpl implements CuaCotxes {
     }
 
     @Override
-    public void cancelar(Cotxe cotxe) {
+    public void cancelar() {
         if(cua.isEmpty()){
             throw new NoSuchElementException("La llista está buida");
         }
